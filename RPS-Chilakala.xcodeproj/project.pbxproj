@@ -15,6 +15,7 @@
 		283E39C2203BC36900088563 /* Player1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283E39C1203BC36900088563 /* Player1_ViewController.swift */; };
 		283E39C4203BC38F00088563 /* Player2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283E39C3203BC38F00088563 /* Player2_ViewController.swift */; };
 		283E39C6203BC3AF00088563 /* Result_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283E39C5203BC3AF00088563 /* Result_ViewController.swift */; };
+		283E39C8203BE34300088563 /* RPSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283E39C7203BE34300088563 /* RPSModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		283E39C1203BC36900088563 /* Player1_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player1_ViewController.swift; sourceTree = "<group>"; };
 		283E39C3203BC38F00088563 /* Player2_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player2_ViewController.swift; sourceTree = "<group>"; };
 		283E39C5203BC3AF00088563 /* Result_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result_ViewController.swift; sourceTree = "<group>"; };
+		283E39C7203BE34300088563 /* RPSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				283E39C1203BC36900088563 /* Player1_ViewController.swift */,
 				283E39C3203BC38F00088563 /* Player2_ViewController.swift */,
 				283E39C5203BC3AF00088563 /* Result_ViewController.swift */,
+				283E39C7203BE34300088563 /* RPSModel.swift */,
 			);
 			path = "RPS-Chilakala";
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				283E39C6203BC3AF00088563 /* Result_ViewController.swift in Sources */,
+				283E39C8203BE34300088563 /* RPSModel.swift in Sources */,
 				283E39C4203BC38F00088563 /* Player2_ViewController.swift in Sources */,
 				283E39B0203BBF0C00088563 /* ViewController.swift in Sources */,
 				283E39C2203BC36900088563 /* Player1_ViewController.swift in Sources */,
