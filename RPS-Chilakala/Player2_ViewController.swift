@@ -18,6 +18,29 @@ class Player2_ViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var SelectionLBL: UILabel!
+    
+    
+    @IBAction func RockBTN(_ sender: Any) {
+        
+        AppDelegate.model.ChoosePlayer2(pick: .Rock)
+        SelectionLBL.text = "Selection has been made"
+    }
+    
+    
+    @IBAction func PaperBTN(_ sender: Any) {
+        
+        AppDelegate.model.ChoosePlayer2(pick: .Paper)
+        SelectionLBL.text = "Selection has been made"
+    }
+    
+    
+    @IBAction func ScissorBTN(_ sender: Any) {
+        
+        AppDelegate.model.ChoosePlayer2(pick: .Scissor)
+        SelectionLBL.text = "Selection has been made"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

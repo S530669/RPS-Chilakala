@@ -30,8 +30,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6Y-QW-XxW">
+                                <rect key="frame" x="38" y="179" width="294" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 1 count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTI-RA-eO7">
+                                <rect key="frame" x="38" y="240" width="294" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 2 count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFY-qS-5im">
+                                <rect key="frame" x="38" y="307" width="294" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Players Response" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw5-iU-G8a">
+                                <rect key="frame" x="38" y="369" width="294" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.36253368009937542" green="0.40781933069229126" blue="0.40775594545243893" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="MS2-hz-fCQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Result" image="Result" id="XeJ-HM-Ulr"/>
@@ -71,6 +99,9 @@
                                 <state key="normal" title="Rock" image="Rock">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="RockBTN:" destination="H9G-aC-WQO" eventType="touchUpInside" id="BzW-7P-DoV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIN-bZ-Yza">
                                 <rect key="frame" x="76" y="314" width="97" height="50"/>
@@ -78,6 +109,9 @@
                                 <state key="normal" title="Paper" image="Paper">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="PaperBTN:" destination="H9G-aC-WQO" eventType="touchUpInside" id="6tV-WK-OT5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxg-jp-8Bk">
                                 <rect key="frame" x="76" y="417" width="115" height="50"/>
@@ -85,6 +119,9 @@
                                 <state key="normal" title="Scissor" image="Scissor">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="ScissorBTN:" destination="H9G-aC-WQO" eventType="touchUpInside" id="sfx-2P-ZE6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make a selecion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7y4-gY-7Pg">
                                 <rect key="frame" x="76" y="170" width="126" height="21"/>
@@ -94,13 +131,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.35481783150000001" green="1" blue="0.98616603489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Byv-E0-8w5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Player2" image="Player2" id="VUL-9y-Pva"/>
                     <connections>
                         <outlet property="Player2_RefBar_Title" destination="VUL-9y-Pva" id="QaK-DV-0dd"/>
                         <outlet property="Player2_TF" destination="7gK-dB-EOy" id="n4x-RD-Dja"/>
+                        <outlet property="SelectionLBL" destination="7y4-gY-7Pg" id="6nZ-dE-Zbk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Vw-qN-gwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -135,6 +173,9 @@
                                 <state key="normal" title="Rock" image="Rock">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="RockBTN:" destination="Tgs-SX-QJ8" eventType="touchUpInside" id="b1L-5z-es0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4C-Nh-8Fo">
                                 <rect key="frame" x="62" y="302" width="98" height="33"/>
@@ -142,13 +183,9 @@
                                 <state key="normal" title="Paper" image="Paper">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bt-am-eWN">
-                                <rect key="frame" x="62" y="392" width="124" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Scissor" image="Scissor">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
+                                <connections>
+                                    <action selector="PaperBTN:" destination="Tgs-SX-QJ8" eventType="touchUpInside" id="HAY-Hr-h5Y"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make a selection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2c-GA-pdN">
                                 <rect key="frame" x="70" y="158" width="137" height="21"/>
@@ -167,14 +204,26 @@
                                     <action selector="Player1_Edit_TF:" destination="Tgs-SX-QJ8" eventType="editingChanged" id="yVu-P9-tAr"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bt-am-eWN">
+                                <rect key="frame" x="62" y="380" width="124" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Scissor" image="Scissor">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="ScissorBTN:" destination="Tgs-SX-QJ8" eventType="touchUpInside" id="70a-Yr-ZYa"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.35481783150000001" green="1" blue="0.98616603489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="E4m-hF-icY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Player1" image="Player1" id="ifU-Rv-S2w"/>
                     <connections>
                         <outlet property="Player1_RefBar_Title" destination="ifU-Rv-S2w" id="71Q-fs-hf3"/>
                         <outlet property="Player1_TF" destination="Dep-kR-feI" id="eYs-XW-AHk"/>
+                        <outlet property="RockBTN" destination="sjw-6h-ngK" id="n2o-MW-xCy"/>
+                        <outlet property="SelectionLBL" destination="x2c-GA-pdN" id="IBq-l5-85r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DhW-Yi-R9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
