@@ -24,21 +24,21 @@ class Player2_ViewController: UIViewController {
     @IBAction func RockBTN(_ sender: Any) {
         
         AppDelegate.model.ChoosePlayer2(pick: .Rock)
-        SelectionLBL.text = "Selection has been made"
+        SelectionLBL.text = "Your selection is Rock"
     }
     
     
     @IBAction func PaperBTN(_ sender: Any) {
         
         AppDelegate.model.ChoosePlayer2(pick: .Paper)
-        SelectionLBL.text = "Selection has been made"
+        SelectionLBL.text = "Your selection is Paper"
     }
     
     
     @IBAction func ScissorBTN(_ sender: Any) {
         
         AppDelegate.model.ChoosePlayer2(pick: .Scissor)
-        SelectionLBL.text = "Selection has been made"
+        SelectionLBL.text = "Your selection is Scissor"
     }
     
     override func viewDidLoad() {

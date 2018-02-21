@@ -9,7 +9,27 @@
 import UIKit
 
 class Result_ViewController: UIViewController {
-
+    
+    
+    
+    @IBOutlet weak var ResultLBL: UILabel!
+    
+    @IBOutlet weak var Player1LBL: UILabel!
+    @IBOutlet weak var Player2LBL: UILabel!
+    
+    @IBOutlet weak var PlayerResponseLBL: UILabel!
+    
+    
+    
+    
+    
+    
+    @IBAction func ResetBTN(_ sender: Any) {
+        AppDelegate.model.reset()
+        ResultLBL.text = "Make your selections on the other tabs"
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
