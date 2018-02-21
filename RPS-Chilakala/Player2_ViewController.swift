@@ -49,6 +49,17 @@ class Player2_ViewController: UIViewController {
         SelectionLBL.text = "Your selection is Scissor"
     }
     
+    @IBAction func SpockBTN(_ sender: Any) {
+        AppDelegate.model.ChoosePlayer2(pick: .Spock)
+        SelectionLBL.text = "Your selection is Spock"
+    }
+    
+    
+    @IBAction func LizardBTN(_ sender: Any) {
+        
+        AppDelegate.model.ChoosePlayer2(pick: .Lizard)
+        SelectionLBL.text = "Your selection is Lizard"    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

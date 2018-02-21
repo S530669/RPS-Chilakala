@@ -16,7 +16,7 @@ class RPSModel {
     }
     
     enum Choice {
-        case None, Rock, Paper, Scissor
+        case None, Rock, Paper, Scissor, Spock, Lizard
     }
     
     private var _Player1Choice : Choice = .None
@@ -32,8 +32,19 @@ class RPSModel {
             return _Player2Choice
         }
     }
-    var Player1WinCount : Int = 0
-    var Player2WinCount : Int = 0
+    private var _Player1WinCount : Int = 0
+    var Player1WinCount:Int{
+        get{
+            return _Player1WinCount
+        }
+    }
+    
+    private var _Player2WinCount : Int = 0
+    var Player2WinCount:Int{
+        get{
+            return _Player2WinCount
+        }
+    }
     
     init() {
         _Player1Choice = .None
@@ -42,8 +53,8 @@ class RPSModel {
     func reset() {
         _Player1Choice = .None
         _Player2Choice = .None
-        Player1WinCount = 0
-        Player2WinCount = 0
+        _Player1WinCount = 0
+        _Player2WinCount = 0
     }
     
     func haveResult() -> Bool {
@@ -61,33 +72,53 @@ class RPSModel {
         }
         else{
             if Player1Choice == .Rock {
-                if Player2Choice == .Paper {
-                    Player2WinCount += 1
+                if Player2Choice == .Paper  || Player2Choice == .Spock{
+                    _Player2WinCount += 1
                     return "Player 2 wins"
                 }
                 else {
-                    Player1WinCount += 1
+                    _Player1WinCount += 1
                     return "Player 1 wins"
                 }
             }
             else if Player1Choice == .Scissor {
-                if Player2Choice == .Rock {
-                    Player2WinCount += 1
+                if Player2Choice == .Rock || Player2Choice == .Spock{
+                    _Player2WinCount += 1
                     return "Player 2 wins"
                 }
                 else{
-                    Player1WinCount += 1
+                    _Player1WinCount += 1
                     return "Player 1 wins"
                 }
 
             }
             else if Player1Choice == .Paper {
-                if Player2Choice == .Scissor {
-                    Player2WinCount += 1
+                if Player2Choice == .Scissor || Player2Choice == .Lizard {
+                    _Player2WinCount += 1
                     return "Player 2 wins"
                 }
                 else {
-                    Player1WinCount += 1
+                    _Player1WinCount += 1
+                    return "Player 1 wins"
+                }
+            }
+            else if Player1Choice == .Lizard {
+                if Player2Choice == .Scissor || Player2Choice == .Rock {
+                   _Player2WinCount += 1
+                    return "Player 2 wins"
+                }
+                else {
+                    _Player1WinCount += 1
+                    return "Player 1 wins"
+                }
+            }
+            else if Player1Choice == .Spock {
+                if Player2Choice == .Paper || Player2Choice == .Lizard {
+                    _Player2WinCount += 1
+                    return "Player 2 wins"
+                }
+                else {
+                    _Player1WinCount += 1
                     return "Player 1 wins"
                 }
             }
