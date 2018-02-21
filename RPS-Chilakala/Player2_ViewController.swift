@@ -18,15 +18,32 @@ class Player2_ViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var rb: UIButton!
+    @IBOutlet weak var pb: UIButton!
+    @IBOutlet weak var sb: UIButton!
+    @IBOutlet weak var spb: UIButton!
+    @IBOutlet weak var lb: UIButton!
+    
+    
+    
+    
     @IBOutlet weak var SelectionLBL: UILabel!
     
     
     override func viewWillAppear(_ animated: Bool) {
         if(AppDelegate.model.Player2Choice == .None){
             SelectionLBL.text = "Please make a selection"
-        }else{
+            rb.isEnabled = true
+            sb.isEnabled = true
+            pb.isEnabled = true
+            spb.isEnabled = true
+            lb.isEnabled = true        }else{
             SelectionLBL.text = "Your selection is \(AppDelegate.model.Player2Choice)"
-        }
+            rb.isEnabled = false
+            sb.isEnabled = false
+            pb.isEnabled = false
+            spb.isEnabled = false
+            lb.isEnabled = false        }
     }
     
     @IBAction func RockBTN(_ sender: Any) {

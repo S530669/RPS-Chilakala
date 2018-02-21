@@ -23,13 +23,28 @@ class Player1_ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         if(AppDelegate.model.Player1Choice == .None){
             SelectionLBL.text = "Please make a selection"
+            rb.isEnabled = true
+            sb.isEnabled = true
+            pb.isEnabled = true
+            spb.isEnabled = true
+            lb.isEnabled = true
         }else{
             SelectionLBL.text = "Your selection is \(AppDelegate.model.Player1Choice)"
+            rb.isEnabled = false
+            sb.isEnabled = false
+            pb.isEnabled = false
+            spb.isEnabled = false
+            lb.isEnabled = false
         }
     }
+    @IBOutlet weak var rb: UIButton!
     
+    @IBOutlet weak var pb: UIButton!
     
+    @IBOutlet weak var lb: UIButton!
+    @IBOutlet weak var sb: UIButton!
     @IBOutlet weak var SelectionLBL: UILabel!
+    @IBOutlet weak var spb: UIButton!
     
     @IBAction func RockBTN(_ sender: Any) {
         

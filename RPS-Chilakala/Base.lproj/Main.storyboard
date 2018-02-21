@@ -50,7 +50,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVJ-ps-evS">
                                 <rect key="frame" x="143" y="83" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Reset"/>
+                                <color key="backgroundColor" red="1" green="0.93418551581423459" blue="0.28862176078138579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" red="1" green="0.92453024775562276" blue="0.22927840071796779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="ResetBTN:" destination="RVa-yy-9Fk" eventType="touchDown" id="mXQ-fu-4nH"/>
                                 </connections>
@@ -190,6 +193,11 @@
                         <outlet property="Player2_RefBar_Title" destination="VUL-9y-Pva" id="QaK-DV-0dd"/>
                         <outlet property="Player2_TF" destination="7gK-dB-EOy" id="n4x-RD-Dja"/>
                         <outlet property="SelectionLBL" destination="7y4-gY-7Pg" id="6nZ-dE-Zbk"/>
+                        <outlet property="lb" destination="agf-mh-fls" id="T9B-bW-h2v"/>
+                        <outlet property="pb" destination="zIN-bZ-Yza" id="foE-M4-y4x"/>
+                        <outlet property="rb" destination="nod-vM-XLR" id="7Cq-Kd-Jb2"/>
+                        <outlet property="sb" destination="Vxg-jp-8Bk" id="eZP-Fl-cff"/>
+                        <outlet property="spb" destination="KMj-Yu-Pib" id="cYp-Il-KYe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Vw-qN-gwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -265,16 +273,6 @@
                                     <action selector="ScissorBTN:" destination="Tgs-SX-QJ8" eventType="touchUpInside" id="70a-Yr-ZYa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHO-br-nxW">
-                                <rect key="frame" x="113" y="441" width="101" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Spock" image="Spock">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="SpockBTN:" destination="Tgs-SX-QJ8" eventType="touchUpInside" id="Pjf-n9-ceR"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAc-X4-H0l">
                                 <rect key="frame" x="86" y="499" width="154" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -283,6 +281,16 @@
                                 </state>
                                 <connections>
                                     <action selector="LizardBTN:" destination="Tgs-SX-QJ8" eventType="touchUpInside" id="UHl-uX-mJG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHO-br-nxW">
+                                <rect key="frame" x="113" y="434" width="101" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Spock" image="Spock">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="SpockBTN:" destination="Tgs-SX-QJ8" eventType="touchUpInside" id="Pjf-n9-ceR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -294,6 +302,11 @@
                         <outlet property="Player1_RefBar_Title" destination="ifU-Rv-S2w" id="71Q-fs-hf3"/>
                         <outlet property="Player1_TF" destination="Dep-kR-feI" id="eYs-XW-AHk"/>
                         <outlet property="SelectionLBL" destination="x2c-GA-pdN" id="IBq-l5-85r"/>
+                        <outlet property="lb" destination="RAc-X4-H0l" id="6GF-cg-o6p"/>
+                        <outlet property="pb" destination="F4C-Nh-8Fo" id="XVh-kS-jH2"/>
+                        <outlet property="rb" destination="BRN-LP-r5M" id="s6t-vm-tgk"/>
+                        <outlet property="sb" destination="0bt-am-eWN" id="V6s-Ko-GzJ"/>
+                        <outlet property="spb" destination="uHO-br-nxW" id="i96-bx-QeP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DhW-Yi-R9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
