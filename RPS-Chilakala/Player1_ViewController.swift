@@ -20,6 +20,15 @@ class Player1_ViewController: UIViewController {
     }
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        if(AppDelegate.model.Player1Choice == .None){
+            SelectionLBL.text = "Please make a selection"
+        }else{
+            SelectionLBL.text = "Your selection is \(AppDelegate.model.Player1Choice)"
+        }
+    }
+    
+    
     @IBOutlet weak var SelectionLBL: UILabel!
     
     @IBAction func RockBTN(_ sender: Any) {

@@ -20,18 +20,39 @@ class Result_ViewController: UIViewController {
     @IBOutlet weak var PlayerResponseLBL: UILabel!
     
     
-    
-    
-    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        if !AppDelegate.model.haveResult() {
+            ResultLBL.text = "Make your selections on the other tabs"
+        }
+        else {
+        
+       
+            ResultLBL.text = AppDelegate.model.winner()
+            Player1LBL.text = String (AppDelegate.model.Player1WinCount)
+            Player2LBL.text = String (AppDelegate.model.Player2WinCount)
+            
+            AppDelegate.model.ChoosePlayer1(pick: .None)
+            AppDelegate.model.ChoosePlayer2(pick: .None)
+            
+            
+        }
+        
+        
+    }
     
     @IBAction func ResetBTN(_ sender: Any) {
         AppDelegate.model.reset()
         ResultLBL.text = "Make your selections on the other tabs"
+        Player1LBL.text = String (0)
+        Player2LBL.text = String (0)
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Player1LBL.text = String (0)
+        Player2LBL.text = String (0)
 
         // Do any additional setup after loading the view.
     }

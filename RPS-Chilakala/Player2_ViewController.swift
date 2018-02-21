@@ -21,6 +21,14 @@ class Player2_ViewController: UIViewController {
     @IBOutlet weak var SelectionLBL: UILabel!
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        if(AppDelegate.model.Player2Choice == .None){
+            SelectionLBL.text = "Please make a selection"
+        }else{
+            SelectionLBL.text = "Your selection is \(AppDelegate.model.Player2Choice)"
+        }
+    }
+    
     @IBAction func RockBTN(_ sender: Any) {
         
         AppDelegate.model.ChoosePlayer2(pick: .Rock)
